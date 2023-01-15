@@ -58,7 +58,7 @@ Benign Vs Malicious URLs Class-wise: This is also a binary classification but in
 ## FEATURE EXTRACTION / FEATURE EMBEDDINGS
 For machine learning algorithms to work, the input features are to be provided, so it is crucial to extract features that best showcase and preserve the information from the raw data which in this case are the URLs. As the raw data is textual, the limelight of this project was on the lexical aspect of the URLs. Three different kinds of feature groups were chosen for analysis as shown below.
 
-![Alt text](Features Table?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/Features%20Table.PNG?raw=true "Title")
 
 ## FEATURE ANALYSIS AND MODEL SELECTION
 This stage is the most important stage of the project as the feature inputs are selected and the models are finalized here. All three features are compared and additional features are also added as the input on top of the selected feature group.
@@ -85,20 +85,20 @@ Once the feature analysis is completed, the models will be evaluated based on th
 ## Results
 ### BENIGN VS MALICIOUS URLS Best Models
 
-![Alt text](R1.1?raw=true "Title")
-![Alt text](R1.2?raw=true "Title")
-![Alt text](R1.3?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R1.1.png?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R1.2.png?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R1.3.png?raw=true "Title")
 
 ### BENIGN VS MALICIOUS URLS CLASS-WISE Best Models
 
-![Alt text](R2?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R2.PNG?raw=true "Title")
 
 ### 5-CLASS CLASSIFICATION Best Models
 
-![Alt text](R13.1?raw=true "Title")
-![Alt text](R3.2?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R3.1.png?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R3.1.png?raw=true "Title")
 
 ### RQA
 
-![Alt text](R4?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/R4.png?raw=true "Title")
 
