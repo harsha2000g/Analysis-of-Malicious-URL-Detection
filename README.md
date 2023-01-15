@@ -48,9 +48,57 @@ Anaconda platform provides various multi-purpose software and services under Ana
 
 ## DATA HANDLING AND PRE-PROCESSING
 This section involves loading, cleaning, and organizing the data. Since there are three kinds of classification implemented and evaluated, data preparation becomes the key. The classification types are
-### Benign Vs Malicious URLs: This is a direct binary classification where benign URLs are assigned the integer 0 while all the malicious URLs (phishing, malware, spam, and defacement) are assigned the integer 1.
-### Benign Vs Malicious URLs Class-wise: This is also a binary classification but instead of taking all the malicious URLs, each individual class is pitted against benign URLs.
-### 5-Class Classification: This is a multi-classification where each URL class is assigned a unique integer from zero to four.
 
+Benign Vs Malicious URLs: This is a direct binary classification where benign URLs are assigned the integer 0 while all the malicious URLs (phishing, malware, spam, and defacement) are assigned the integer 1.
 
+Benign Vs Malicious URLs Class-wise: This is also a binary classification but instead of taking all the malicious URLs, each individual class is pitted against benign URLs.
+
+5-Class Classification: This is a multi-classification where each URL class is assigned a unique integer from zero to four.
+
+## FEATURE EXTRACTION / FEATURE EMBEDDINGS
+For machine learning algorithms to work, the input features are to be provided, so it is crucial to extract features that best showcase and preserve the information from the raw data which in this case are the URLs. As the raw data is textual, the limelight of this project was on the lexical aspect of the URLs. Three different kinds of feature groups were chosen for analysis as shown below.
+
+![Alt text](Features Table?raw=true "Title")
+
+## FEATURE ANALYSIS AND MODEL SELECTION
+This stage is the most important stage of the project as the feature inputs are selected and the models are finalized here. All three features are compared and additional features are also added as the input on top of the selected feature group.
+After thorough research, the best data analysis technique usable and producing considerable improvements in the performance of the model is RQA. RQA (Recurrence Quantification Analysis) is a non-linear data analysis technique that focuses on the recurrence aspect of the characters. The RQA measures are able to bring out significant information about occurrences of characters within a URL. The following fifteen measures were used during the analysis:
+-Recurrence rate
+-Determinism
+-Average diagonal line length
+-Longest diagonal line length
+-Divergence
+-Entropy diagonal lines
+-Laminarity
+-Trapping time
+-Longest vertical line length
+-Entropy vertical lines
+-Average white vertical line length
+-Longest white vertical line length
+-Entropy white vertical lines 
+-Ratio determinism / recurrence rate 
+-Ratio laminarity / determinism 
+
+## EVALUATION AND HYPER-PARAMETER TUNING
+Once the feature analysis is completed, the models will be evaluated based on the metrics accuracy, precision, recall, F1 score, and log loss. These metrics for both training and testing will be observed after performing a 5-fold cross-validation. This is done so as to confirm the performance of a model instead of taking just one test set and judging the model’s ability. With five folds the training and the testing split will be 80:20 which is optimal. Once the best models for various features are finalized, hyper-parameter tuning is executed to identify the model’s best state. The exhaustive grid search is used for hyper-parameter tuning.
+
+## Results
+### BENIGN VS MALICIOUS URLS Best Models
+
+![Alt text](R1.1?raw=true "Title")
+![Alt text](R1.2?raw=true "Title")
+![Alt text](R1.3?raw=true "Title")
+
+### BENIGN VS MALICIOUS URLS CLASS-WISE Best Models
+
+![Alt text](R2?raw=true "Title")
+
+### 5-CLASS CLASSIFICATION Best Models
+
+![Alt text](R13.1?raw=true "Title")
+![Alt text](R3.2?raw=true "Title")
+
+### RQA
+
+![Alt text](R4?raw=true "Title")
 
