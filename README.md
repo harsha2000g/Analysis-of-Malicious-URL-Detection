@@ -44,7 +44,7 @@ Anaconda platform provides various multi-purpose software and services under Ana
 ## DATASET
 ### The development of models that employ character-level embedding and a 5-class classification requires a proper distribution of the classes along with differing lexical styles. This is because the machine learning algorithms need to identify the patterns that differentiate between the classes and provide legitimate outputs. The Canadian dataset, ISCX-URL2016 has over one lakh sixty-five thousand data points where five classes are distributed in an uneven distribution.
 
-![Alt text](D:\Projects\"Analysis of Malicious URL Detection"\"Images for ReadMe"\"Data Distribution.png"?raw=true "Title")
+![Alt text](https://github.com/harsha2000g/Analysis-of-Malicious-URL-Detection/blob/master/Analysis%20of%20Malicious%20URL%20Detection/Data%20Distribution.PNG?raw=true "Title")
 
 ## DATA HANDLING AND PRE-PROCESSING
 This section involves loading, cleaning, and organizing the data. Since there are three kinds of classification implemented and evaluated, data preparation becomes the key. The classification types are
