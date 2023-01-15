@@ -46,4 +46,11 @@ Anaconda platform provides various multi-purpose software and services under Ana
 
 ![Alt text](D:\Projects\"Analysis of Malicious URL Detection"\"Images for ReadMe"\"Data Distribution.png"?raw=true "Title")
 
+## DATA HANDLING AND PRE-PROCESSING
+This section involves loading, cleaning, and organizing the data. Since there are three kinds of classification implemented and evaluated, data preparation becomes the key. The classification types are
+### Benign Vs Malicious URLs: This is a direct binary classification where benign URLs are assigned the integer 0 while all the malicious URLs (phishing, malware, spam, and defacement) are assigned the integer 1.
+### Benign Vs Malicious URLs Class-wise: This is also a binary classification but instead of taking all the malicious URLs, each individual class is pitted against benign URLs.
+### 5-Class Classification: This is a multi-classification where each URL class is assigned a unique integer from zero to four.
+
+
 
